@@ -4,10 +4,10 @@
 <section class="content-header">
   <h1>
     Dashboard
-    <small>Control Panel</small>
+    <small>Panneau De Control</small>
   </h1>
   <ol class="breadcrumb">
-    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li><a href="#"><i class="fa fa-dashboard"></i> Accueil</a></li>
     <li class="active">Dashboard</li>
   </ol>
 </section>
@@ -31,12 +31,12 @@
             <div class="inner">
               <h3>{{ $data['total_products'] }}</h3>
 
-              <p>Total Products</p>
+              <p>Total Des Produits</p>
             </div>
             <div class="icon">
               <i class="fa fa-briefcase"></i>
             </div>
-            <a href="/stock/view" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="/stock/view" class="small-box-footer">Plus d'info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -46,12 +46,12 @@
             <div class="inner">
               <h3>{{ $data['sales_transactions'] }}</h3>
 
-              <p>Sales Transactions</p>
+              <p>Totales Des Transactions</p>
             </div>
             <div class="icon">
               <i class="fa fa-shopping-cart"></i>
             </div>
-            <a href="/sales/view" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="/sales/view" class="small-box-footer">Plus d'info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -61,12 +61,12 @@
             <div class="inner">
               <h3>{{ $data['suppliers'] }}</h3>
 
-              <p>Suppliers</p>
+              <p>Fournisseurs</p>
             </div>
             <div class="icon">
               <i class="fa fa-truck"></i>
             </div>
-            <a href="/supplier/view" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="/supplier/view" class="small-box-footer">Plus d'info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -76,12 +76,12 @@
             <div class="inner">
               <h3>{{ $data['customers'] }}</h3>
 
-              <p>Customers</p>
+              <p>Clients</p>
             </div>
             <div class="icon">
               <i class="fa fa-group"></i>
             </div>
-            <a href="/customer/view" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="/customer/view" class="small-box-footer">Plus d'info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -112,7 +112,7 @@
         <div class="col-xs-12">
           <div class="box box-info">
           <div class="box-header with-bstock_category">
-            <h3 class="box-title">Stock Availability</h3>
+            <h3 class="box-title">Disponibilité du stock</h3>
 
             <div class="box-tools pull-right">
               <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -139,11 +139,11 @@
                             <thead>
                             <tr>
                                 <th data-field="stock_id" data-align="center" data-sortable="true">Stock ID</th>
-                                <th data-field="category.category_name" data-align="center" data-sortable="true">Stock Category</th>
-                                <th data-field="stock_name" data-align="center" data-sortable="true">Stock Type</th>
-                                <th data-field="purchase_cost" data-align="center" data-sortable="true">Purchase Cost (₹)</th>
-                                <th data-field="selling_cost" data-align="center" data-sortable="true">Selling Cost (₹)</th>
-                                <th data-field="stock_quantity" data-align="center" data-sortable="true">Available Quantity</th>
+                                <th data-field="category.category_name" data-align="center" data-sortable="true">Categorie Stock</th>
+                                <th data-field="stock_name" data-align="center" data-sortable="true">Type Stock</th>
+                                <th data-field="purchase_cost" data-align="center" data-sortable="true">Cout d'achat (DA)</th>
+                                <th data-field="selling_cost" data-align="center" data-sortable="true">Cout de vente (DA)</th>
+                                <th data-field="stock_quantity" data-align="center" data-sortable="true">Quantité disponible</th>
                             </tr>
                             </thead>
                         </table>

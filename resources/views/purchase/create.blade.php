@@ -7,8 +7,8 @@
     <small></small>
   </h1>
   <ol class="breadcrumb">
-    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-    <li class="active">Add Purchase</li>
+    <li><a href="#"><i class="fa fa-dashboard"></i> Accueil</a></li>
+    <li class="active">Ajouter Achat</li>
   </ol>
 </section>
 
@@ -19,7 +19,7 @@
         <div class="col-sm-12">
           <div class="box box-primary">
           <div class="box-header with-border">
-            <h3 class="box-title">Add Purchase</h3>
+            <h3 class="box-title">Ajouter Achat</h3>
 
             <div class="box-tools pull-right">
               <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -42,13 +42,13 @@
                               <div class="form-group">
                                 <label>Supplier Name</label>
                                 <input type="text" class="form-control search_supplier_name" placeholder="Type here ..." name="supplier_name" autocomplete="off">
-                                <span class="help-block search_supplier_name_empty" style="display: none;">No Results Found ...</span>
+                                <span class="help-block search_supplier_name_empty" style="display: none;">Pas de résultats trouvés ...</span>
                                 <input type="hidden" class="search_supplier_id" name="supplier_id">
                               </div>
                             </div>
                             <div class="col-sm-3">
                               <div class="form-group">
-                                <label>Address</label><br>
+                                <label>Adresse</label><br>
                                 <input type="text" class="form-control search_supplier_address" name="supplier_address" autocomplete="off">
                               </div>
                             </div>
@@ -85,18 +85,18 @@
                             <table class="table table-striped">
                               <thead>
                                 <tr>
-                                  <th>Stock Catagory</th>
-                                  <th>Physical Quantity</th>
-                                  <th>No.of.Units</th>
-                                  <th>Purchase cost / Unit</th>
+                                  <th>Stock Catagorie</th>
+                                  <th>Quanitité physique</th>
+                                  <th>No.Unités</th>
+                                  <th>Achat cout / Unité</th>
                                   <th>Total</th>
                                 </tr>
                               </thead>
                               <tbody class="purchase_container">
                                 <tr>
                                   <td>
-                                    <input type="text" class="form-control search_purchase_category_name" placeholder="Type here ..." name="category_name[]" autocomplete="off">
-                                  <span class="help-block search_purchase_category_name_empty" style="display: none;">No Results Found ...</span>
+                                    <input type="text" class="form-control search_purchase_category_name" placeholder="Taper ici" name="category_name[]" autocomplete="off">
+                                  <span class="help-block search_purchase_category_name_empty" style="display: none;">Pas de résultats trouvé ...</span>
                                   <input type="hidden" class="search_category_id" name="category_id[]">
                                   </td>
                                   <td width="250px">
@@ -128,7 +128,7 @@
                               <tfoot>
                                 <tr>
                                   <td colspan="3">
-                                    <button type="button" class="btn btn-primary add_purchase_product"><i class="fa fa-plus"></i> Add More</button>
+                                    <button type="button" class="btn btn-primary add_purchase_product"><i class="fa fa-plus"></i> Ajouter Plus</button>
                                   </td>
                                   <td></td>
                                 </tr>
@@ -182,7 +182,7 @@
                               
                               <div class="col-md-offset-8 col-md-4">
                                 <div class="form-group">
-                                  <label>Purchase Total</label><br>
+                                  <label>Total Achat</label><br>
                                   <input type="text" class="form-control purchase_total" readonly="" name="purchase_total">
                                 </div>
                               </div>
@@ -192,13 +192,13 @@
                             <div class="row">
                               <div class="col-md-offset-4 col-md-4">
                                 <div class="form-group">
-                                  <label>Discount ( % )</label><br>
+                                  <label>Réduction ( % )</label><br>
                                   <input type="number" class="form-control purchase_discount_percent" name="discount_percent" step="0.01" min="0" max="100" value="0">
                                 </div>
                               </div>
                               <div class="col-md-4">
                                 <div class="form-group">
-                                  <label>Discount ( Amount )</label><br>
+                                  <label>Réduction ( Montant )</label><br>
                                   <input type="text" class="form-control purchase_discount_amount" name="discount_amount" step="0.01" min="0" value="0">
                                 </div>
                               </div>
@@ -221,7 +221,7 @@
                               </div>
                               <div class="col-md-4">
                                 <div class="form-group">
-                                  <label>Tax ( Amount )</label><br>
+                                  <label>Tax ( Montant )</label><br>
                                   <input type="text" class="form-control purchase_tax_amount" name="tax_amount"   step="0.01" min="0" value="0">
                                 </div>
                               </div>
@@ -250,7 +250,7 @@
 
                             <div class="col-sm-2">
                               <div class="form-group">
-                                <label>Payment</label><br>
+                                <label>Payement</label><br>
                                 <input type="text" class="form-control purchase_payment" name="payment" autocomplete="off">
                               </div>
                             </div>
@@ -274,8 +274,8 @@
                                 <label>Mode</label>
                                 <select class="form-control" name="mode">
                                   <option value="1">Cash</option>
-                                  <option value="2">Cheque</option>
-                                  <option value="3">Card</option>
+                                  <option value="2">Chéque</option>
+                                  <option value="3">Carte</option>
                                 </select>
                               </div>
                             </div>
@@ -288,8 +288,8 @@
                     <!-- /.box-body -->
 
                     <div class="box-footer">
-                      <button type="reset" class="btn btn-danger pull-left">Reset</button>
-                      <button type="submit" class="btn btn-primary pull-right form_submit"><i class="fa fa-plus"></i> Add</button>
+                      <button type="reset" class="btn btn-danger pull-left">Réinitialiser</button>
+                      <button type="submit" class="btn btn-primary pull-right form_submit"><i class="fa fa-plus"></i> Ajouter</button>
                     </div>
             </form>
           </div>

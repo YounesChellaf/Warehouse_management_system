@@ -31,8 +31,8 @@
     <small></small>
   </h1>
   <ol class="breadcrumb">
-    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-    <li class="active">Add Sales</li>
+    <li><a href="#"><i class="fa fa-dashboard"></i> Accueil</a></li>
+    <li class="active">Payements</li>
   </ol>
 </section>
 
@@ -53,7 +53,7 @@
         <div class="col-xs-12">
           <div class="box box-info">
           <div class="box-header with-bsales">
-            <h3 class="box-title">View Payments</h3>
+            <h3 class="box-title">Consulter Payements</h3>
 
             <div class="box-tools pull-right">
               <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -82,19 +82,19 @@
                                 
                                 <th data-field="id" data-align="center" data-sortable="true">Transaction ID</th>
                               
-                                <th data-field="purchase_id" data-align="center" data-sortable="true">Purchase Id</th>
+                                <th data-field="purchase_id" data-align="center" data-sortable="true">Achat Id</th>
 
                                 <th data-field="created_at" data-formatter="createdFormatter" data-align="center" data-sortable="true">Date</th>
 
-                                <th data-field="supplier.supplier_name" data-align="center" data-sortable="true">Supplier</th>
+                                <th data-field="supplier.supplier_name" data-align="center" data-sortable="true">Fournisseur</th>
 
-                                <th data-field="subtotal" data-align="center" data-sortable="true">Purchase Amount</th>
+                                <th data-field="subtotal" data-align="center" data-sortable="true">Achat Montant</th>
 
-                                <th data-field="payment" data-align="center" data-sortable="true">Payment</th>
+                                <th data-field="payment" data-align="center" data-sortable="true">Payement</th>
 
                                 <th data-field="balance" data-align="center" data-sortable="true">Balance</th>
 
-                                <th data-field="due" data-align="center" data-sortable="true">Due</th>
+                                <th data-field="due" data-align="center" data-sortable="true">Reste</th>
                                 
                             </tr>
                             </thead>

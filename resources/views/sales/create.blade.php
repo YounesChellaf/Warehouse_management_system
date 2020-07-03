@@ -7,8 +7,8 @@
     <small></small>
   </h1>
   <ol class="breadcrumb">
-    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-    <li class="active">Add Sales</li>
+    <li><a href="#"><i class="fa fa-dashboard"></i> Accueil</a></li>
+    <li class="active">Ajouter Ventes</li>
   </ol>
 </section>
 
@@ -19,7 +19,7 @@
         <div class="col-sm-12">
           <div class="box box-primary">
           <div class="box-header with-border">
-            <h3 class="box-title">Add Sales</h3>
+            <h3 class="box-title">Ajouter Ventes</h3>
 
             <div class="box-tools pull-right">
               <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -40,17 +40,17 @@
                           <div class="row">
                             <div class="col-sm-3">
                               <div class="form-group">
-                                <label>Customer Name</label>
-                                <input type="text" class="form-control search_customer_name" placeholder="Type here ..." name="customer_name">
-                                <span class="help-block search_customer_name_empty" style="display: none;">No Results Found ...</span>
+                                <label>Nom du client</label>
+                                <input type="text" class="form-control search_customer_name" placeholder="nom" name="customer_name">
+                                <span class="help-block search_customer_name_empty" style="display: none;">Pas de résultats trouvé ...</span>
 
-                                <span class="help-block search_purchase_category_name_empty" style="display: none;">No Results Found ...</span>
+                                <span class="help-block search_purchase_category_name_empty" style="display: none;">Pas de résultats trouvé ...</span>
                                 <input type="hidden" class="search_customer_id" name="customer_id">
                               </div>
                             </div>
                             <div class="col-sm-3">
                               <div class="form-group">
-                                <label>Address</label><br>
+                                <label>Adresse</label><br>
                                 <input type="text" class="form-control search_customer_address" name="customer_address">
                               </div>
                             </div>
@@ -87,19 +87,19 @@
                             <table class="table table-striped">
                               <thead>
                                 <tr>
-                                  <th>Stock Catagory</th>
-                                  <th>Physical Quantity</th>
-                                  <th>Purchase cost / Unit</th>
-                                  <th>Selling cost / Unit</th>
-                                  <th>No.of.Units</th>
+                                  <th>Stock Catagorie</th>
+                                  <th>Quanitité physique</th>
+                                  <th>Achat Cout / Unité</th>
+                                  <th>Vente Cout / Unité</th>
+                                  <th>No.Unités</th>
                                   <th>Total</th>
                                 </tr>
                               </thead>
                               <tbody class="sales_container">
                                 <tr>
                                   <td>
-                                    <input type="text" class="form-control search_purchase_category_name" placeholder="Type here ..." name="category_name[]" autocomplete="off">
-                                    <span class="help-block search_purchase_category_name_empty glyphicon" style="display: none;"> No Results Found </span>
+                                    <input type="text" class="form-control search_purchase_category_name" placeholder="" name="category_name[]" autocomplete="off">
+                                    <span class="help-block search_purchase_category_name_empty glyphicon" style="display: none;"> Pas de résultat trouvé </span>
                                     <input type="hidden" class="search_category_id" name="category_id[]">
                                   </td>
                                   <td width="250px">
@@ -120,7 +120,7 @@
                                     <input type="hidden" class="closing_stock" name="closing_stock[]">
 
                                     <input type="number" class="form-control change_sales_quantity" name="sales_quantity[]" min="1">
-                                    <small class="help-block max_stock" style="display: none;">Insufficient Stock</small>
+                                    <small class="help-block max_stock" style="display: none;">Stock Insuffisant</small>
                                   </td>
 
                                   <td width="100px">
@@ -133,7 +133,7 @@
                               <tfoot>
                                 <tr>
                                   <td colspan="3">
-                                    <button type="button" class="btn btn-primary add_sales_product"><i class="fa fa-plus"></i> Add More</button>
+                                    <button type="button" class="btn btn-primary add_sales_product"><i class="fa fa-plus"></i> Ajouter Plus</button>
                                   </td>
                                   <td></td>
                                 </tr>
@@ -143,7 +143,7 @@
                             <div class="row">
                               <div class="col-md-offset-8 col-md-4">
                                 <div class="form-group">
-                                  <label>Sales total</label><br>
+                                  <label>total de ventres</label><br>
                                   <input type="text" class="form-control sales_total" readonly="" name="sales_total">
                                 </div>
                               </div>
@@ -152,13 +152,13 @@
                             <div class="row">
                               <div class="col-md-offset-4 col-md-4">
                                 <div class="form-group">
-                                  <label>Discount ( % )</label><br>
+                                  <label>Réduction ( % )</label><br>
                                   <input type="number" class="form-control sales_discount_percent" name="discount_percent" step="0.01" min="0" max="100" value="0">
                                 </div>
                               </div>
                               <div class="col-md-4">
                                 <div class="form-group">
-                                  <label>Discount ( Amount )</label><br>
+                                  <label>Réduction ( montant )</label><br>
                                   <input type="text" class="form-control sales_discount_amount" name="discount_amount" step="0.01" min="0" value="0">
                                 </div>
                               </div>
@@ -168,7 +168,7 @@
 
                               <div class="col-md-4">
                                 <div class="form-group">
-                                  <label>Tax Description</label><br>
+                                  <label>Description Tax</label><br>
                                   <input type="text" class="form-control" name="tax_description">
                                 </div>
                               </div>
@@ -181,7 +181,7 @@
                               </div>
                               <div class="col-md-4">
                                 <div class="form-group">
-                                  <label>Tax ( Amount )</label><br>
+                                  <label>Tax ( Montant )</label><br>
                                   <input type="text" class="form-control sales_tax_amount" name="tax_amount"   step="0.01" min="0" value="0">
                                 </div>
                               </div>
@@ -196,7 +196,7 @@
 
                             <div class="col-sm-2">
                               <div class="form-group">
-                                <label>Sales Description</label><br>
+                                <label>Description Ventes</label><br>
                                 <textarea class="form-control" style="height: 35px;" name="sales_description"></textarea>
                               </div>
                             </div>
@@ -210,7 +210,7 @@
 
                             <div class="col-sm-2">
                               <div class="form-group">
-                                <label>Payment</label><br>
+                                <label>Payement</label><br>
                                 <input type="text" class="form-control purchase_payment" name="payment">
                               </div>
                             </div>
@@ -235,7 +235,7 @@
                                 <select class="form-control" name="mode">
                                   <option value="1">Cash</option>
                                   <option value="2">Cheque</option>
-                                  <option value="3">Card</option>
+                                  <option value="3">Carte</option>
                                 </select>
                               </div>
                             </div>
@@ -248,8 +248,8 @@
                     <!-- /.box-body -->
 
                     <div class="box-footer">
-                      <button type="reset" class="btn btn-danger pull-left">Reset</button>
-                      <button type="submit" class="btn btn-primary pull-right form_submit"><i class="fa fa-plus"></i> Add</button>
+                      <button type="reset" class="btn btn-danger pull-left">Réinitialiser</button>
+                      <button type="submit" class="btn btn-primary pull-right form_submit"><i class="fa fa-plus"></i> Ajouter</button>
                     </div>
             </form>
           </div>

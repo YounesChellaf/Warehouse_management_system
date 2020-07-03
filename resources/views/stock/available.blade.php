@@ -9,8 +9,8 @@
     <small></small>
   </h1>
   <ol class="breadcrumb">
-    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-    <li class="active">View Stock Availability</li>
+    <li><a href="#"><i class="fa fa-dashboard"></i> Accueil</a></li>
+    <li class="active">Consulter Disponibilité Stock</li>
   </ol>
 </section>
 
@@ -31,7 +31,7 @@
         <div class="col-xs-12">
           <div class="box box-info">
           <div class="box-header with-bstock_category">
-            <h3 class="box-title">View Stock Availability</h3>
+            <h3 class="box-title">Consulter Disponibilité Stock</h3>
 
             <div class="box-tools pull-right">
               <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -58,11 +58,11 @@
                             <thead>
                             <tr>
                                 <th data-field="stock_id" data-align="center" data-sortable="true">Stock ID</th>
-                                <th data-field="category.category_name" data-align="center" data-sortable="true">Stock Category</th>
-                                <th data-field="stock_name" data-align="center" data-sortable="true">Stock Type</th>
-                                <th data-field="purchase_cost" data-align="center" data-sortable="true">Purchase Cost (₹)</th>
-                                <th data-field="selling_cost" data-align="center" data-sortable="true">Selling Cost (₹)</th>
-                                <th data-field="stock_quantity" data-align="center" data-sortable="true">Available Quantity</th>
+                                <th data-field="category.category_name" data-align="center" data-sortable="true">Category Stock</th>
+                                <th data-field="stock_name" data-align="center" data-sortable="true">Type Stock</th>
+                                <th data-field="purchase_cost" data-align="center" data-sortable="true">Cout Achat (DA)</th>
+                                <th data-field="selling_cost" data-align="center" data-sortable="true">Cout Vente (DA)</th>
+                                <th data-field="stock_quantity" data-align="center" data-sortable="true">Quantité Disponible</th>
                             </tr>
                             </thead>
                         </table>

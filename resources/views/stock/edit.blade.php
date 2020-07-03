@@ -7,8 +7,8 @@
     <small></small>
   </h1>
   <ol class="breadcrumb">
-    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-    <li class="active">Edit Stock</li>
+    <li><a href="#"><i class="fa fa-dashboard"></i> Accueil</a></li>
+    <li class="active">Editer Stock</li>
   </ol>
 </section>
 
@@ -19,7 +19,7 @@
         <div class="col-sm-6 col-sm-offset-3">
           <div class="box">
           <div class="box-header with-border">
-            <h3 class="box-title">Edit Stock / Product</h3>
+            <h3 class="box-title">Editer Stock / Produit</h3>
 
             <div class="box-tools pull-right">
               <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -39,7 +39,7 @@
 
                         <div class="col-sm-12">
                           <div class="form-group">
-                            <label>Stock Category</label>
+                            <label>Stock Categorie</label>
                             <input type="text" readonly="" class="form-control" value="{{ $stock_details->category->category_name }}">
 
                             <input type="hidden" name="stock_id" value="{{ $stock_details->stock_id }}">
@@ -68,14 +68,14 @@
                         
                         <div class="col-sm-6">
                           <div class="form-group">
-                            <label>Purchase Cost / Unit</label><br>
+                            <label>Achat Cout / Unité</label><br>
                             <input type="text" class="form-control" name="purchase_cost" placeholder="0.00"  value="{{ $stock_details->purchase_cost }}">
                           </div>
                         </div>
 
                         <div class="col-sm-6">
                           <div class="form-group">
-                            <label>Selling Cost / Unit</label>
+                            <label>Vente Cout / Unité</label>
                             <input type="text" class="form-control" name="selling_cost" placeholder="0.00"  value="{{ $stock_details->selling_cost }}">
                           </div>
                         </div>
@@ -88,14 +88,14 @@
 
                         <div class="col-sm-12">
                           <div class="form-group">
-                            <label>Supplier Name</label><br>
+                            <label>Nom Fournisseur</label><br>
                             <select class="form-control change_supplier_name" name="supplier_id">
                             <option selected="" disabled="" value="">- Select - </option>
 
                               @if($stock_details->supplier_id == 0)
-                                  <option value="0" selected="">- Multiple suppliers -</option>
+                                  <option value="0" selected="">- Multiple fournisseurs -</option>
                               @else
-                                  <option value="0">- Multiple suppliers -</option>    
+                                  <option value="0">- Multiple fournisseurs -</option>    
                               @endif 
                                   
                               @foreach($supplier_details as $key1 => $value1)
@@ -122,8 +122,8 @@
                     <!-- /.box-body -->
 
                     <div class="box-footer">
-                      <button type="reset" class="btn btn-danger pull-left">Reset</button>
-                      <button type="submit" class="btn btn-primary pull-right"><i class="fa fa-edit"></i> Update</button>
+                      <button type="reset" class="btn btn-danger pull-left">Réinitialiser</button>
+                      <button type="submit" class="btn btn-primary pull-right"><i class="fa fa-edit"></i> Editer</button>
                     </div>
             </form>
           </div>

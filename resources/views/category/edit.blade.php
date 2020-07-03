@@ -7,8 +7,8 @@
     <small></small>
   </h1>
   <ol class="breadcrumb">
-    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-    <li class="active">Edit Stock Category</li>
+    <li><a href="#"><i class="fa fa-dashboard"></i> Accueil</a></li>
+    <li class="active">Editer Stock Categorie</li>
   </ol>
 </section>
 
@@ -19,7 +19,7 @@
         <div class="col-sm-6 col-sm-offset-3">
           <div class="box">
           <div class="box-header with-border">
-            <h3 class="box-title">Edit Stock Category</h3>
+            <h3 class="box-title">Editer Stock Categorie</h3>
 
             <div class="box-tools pull-right">
               <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -39,7 +39,7 @@
                         
                         <div class="col-sm-12">
                           <div class="form-group">
-                            <label>Category Name</label><br>
+                            <label>Nom Categorie</label><br>
                             <input type="text" class="form-control" name="category_name" placeholder="" value="{{ $category[0]->category_name }}">
                           </div>
                         </div>
@@ -51,7 +51,7 @@
                         <div class="col-sm-12">
                           
                           <div class="panel panel-primary">
-                            <div class="panel-heading">Measures & Units</div>
+                            <div class="panel-heading">Measures & Unités</div>
                               <div class="panel-body">
                                 <div class="form-group">
                                   @foreach($details as $key => $val)
@@ -82,8 +82,8 @@
                     <!-- /.box-body -->
 
                     <div class="box-footer">
-                      <button type="reset" class="btn btn-danger pull-left">Reset</button>
-                      <button type="submit" class="btn btn-primary pull-right"><i class="fa fa-edit"></i> Update</button>
+                      <button type="reset" class="btn btn-danger pull-left">Réinitialiser</button>
+                      <button type="submit" class="btn btn-primary pull-right"><i class="fa fa-edit"></i> Editer</button>
                     </div>
             </form>
           </div>

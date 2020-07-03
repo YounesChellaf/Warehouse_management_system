@@ -27,8 +27,8 @@
     <small></small>
   </h1>
   <ol class="breadcrumb">
-    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-    <li class="active">Add Stock / Product</li>
+    <li><a href="#"><i class="fa fa-dashboard"></i> Accueil</a></li>
+    <li class="active">Consulter Stock / Produit</li>
   </ol>
 </section>
 
@@ -49,7 +49,7 @@
         <div class="col-xs-12">
           <div class="box box-info">
           <div class="box-header with-bstock">
-            <h3 class="box-title">View Stocks</h3>
+            <h3 class="box-title">Consulter Stock</h3>
 
             <div class="box-tools pull-right">
               <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -79,12 +79,12 @@
                             <thead>
                             <tr>
                                 <th data-field="stock_id" data-align="center" data-sortable="true">Stock ID</th>
-                                <th data-field="category_name" data-align="center" data-sortable="true">Stock Category</th>
-                                <th data-field="stock_name" data-align="center" data-sortable="true">Physical Quantity</th>
-                                <th data-field="purchase_cost" data-align="center" data-sortable="true">Purchase Cost</th>
-                                <th data-field="selling_cost" data-align="center" data-sortable="true">Selling Cost</th>
-                                <th data-field="supplier_name" data-align="center" data-sortable="true">Supplier</th>
-                                <th data-field="stock_quantity" data-align="center" data-sortable="true">Stock Available</th>
+                                <th data-field="category_name" data-align="center" data-sortable="true">Stock Categorie</th>
+                                <th data-field="stock_name" data-align="center" data-sortable="true">Quantité Phisiques</th>
+                                <th data-field="purchase_cost" data-align="center" data-sortable="true">Achat Cout</th>
+                                <th data-field="selling_cost" data-align="center" data-sortable="true">Vente Cout</th>
+                                <th data-field="supplier_name" data-align="center" data-sortable="true">Fournisseur</th>
+                                <th data-field="stock_quantity" data-align="center" data-sortable="true">Disponibilité Stock</th>
                                 <th data-align="center" data-formatter="actionFormatter" data-events="actionEvents" width="200px"> Action </th>
                             </tr>
                             </thead>

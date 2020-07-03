@@ -12,8 +12,8 @@
     <small></small>
   </h1>
   <ol class="breadcrumb">
-    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-    <li class="active">Sales Report</li>
+    <li><a href="#"><i class="fa fa-dashboard"></i> Accueil</a></li>
+    <li class="active">Rapport Ventes</li>
   </ol>
 </section>
 
@@ -34,11 +34,11 @@
       <div class="row">
       <div class="col-md-offset-3 col-md-2">
         <div class="form-group">
-          <label>Report Type</label>
+          <label>Type Rapport</label>
             <select class="form-control inline_report_type" name="report_type">
               <option selected="" disabled="" value="">- Select -</option>
-              <option value="1" @if($data['report_type'] == 1) selected="" @endif>Purchase</option>
-              <option value="2" @if($data['report_type'] == 2) selected="" @endif>Sales</option>
+              <option value="1" @if($data['report_type'] == 1) selected="" @endif>Achats</option>
+              <option value="2" @if($data['report_type'] == 2) selected="" @endif>Ventes</option>
               {{-- <option value="3"  @if($data['report_type'] == 3) selected="" @endif>Purchase Stock</option> --}}
             </select>
         </div>      
@@ -46,7 +46,7 @@
 
       <div class="col-md-2">
         <div class="form-group">
-          <label>From</label>
+          <label>De</label>
           <div class="input-group date">
             <div class="input-group-addon">
               <i class="fa fa-calendar"></i>
@@ -58,7 +58,7 @@
 
       <div class="col-md-2">
         <div class="form-group">
-          <label>To</label><br>
+          <label>à</label><br>
           <div class="input-group date">
             <div class="input-group-addon">
               <i class="fa fa-calendar"></i>
@@ -75,7 +75,7 @@
     <div class="row">
       <div class="col-xs-12">
         <h2 class="page-header">
-          <i class="fa fa-shopping-bag"></i> Sales Report
+          <i class="fa fa-shopping-bag"></i> Rapport Ventes
           <small class="pull-right">Dated: {{ \Carbon\Carbon::now()->format('jS M Y - h:i:s A') }}</small>
         </h2>
       </div>
@@ -91,12 +91,12 @@
           <tr>
             <th>Transaction ID</th>
             <th>Date</th>
-            <th>Sales ID</th>
-            <th>Customer</th>
+            <th>Ventes ID</th>
+            <th>Client</th>
             <th>Grand total</th>
-            <th>Paid</th>
+            <th>Payé</th>
             <th>Balance</th>
-            <th>Due</th>
+            <th>Reste</th>
           </tr>
           </thead>
           <tbody>
@@ -122,7 +122,7 @@
     <div class="row">
       <!-- accepted payments column -->
       <div class="col-xs-6">
-        <p class="lead">Payment Methods:</p>
+        <p class="lead">Méthode payments:</p>
         <img src="/img/credit/visa.png" alt="Visa">
         <img src="/img/credit/mastercard.png" alt="Mastercard">
         <img src="/img/credit/american-express.png" alt="American Express">
@@ -134,24 +134,24 @@
       </div>
       <!-- /.col -->
       <div class="col-xs-6">
-        <p class="lead">Report Date :  {{ $data['from']->format('jS M Y') }} - {{ $data['to']->format('jS M Y') }}</p>
+        <p class="lead">Date rapport :  {{ $data['from']->format('jS M Y') }} - {{ $data['to']->format('jS M Y') }}</p>
 
         <div class="table-responsive">
           <table class="table">
             <tr>
-              <th style="width:50%">Total Purchase:</th>
+              <th style="width:50%">Total Achat:</th>
               <td> <i class="fa fa-inr"></i> {{ $total['purchase'] }}</td>
             </tr>
             <tr>
-              <th>Paid Amount:</th>
+              <th>Montant payé:</th>
               <td> <i class="fa fa-inr"></i> {{ $total['payment'] }}</td>
             </tr>
             <tr>
-              <th>Balance Amount:</th>
+              <th>Balance Montant:</th>
               <td> <i class="fa fa-inr"></i> {{ $total['balance'] }}</td>
             </tr>
             <tr>
-              <th>Due Amount:</th>
+              <th>Reste Montant:</th>
               <td> <i class="fa fa-inr"></i> {{ $total['due'] }}</td>
             </tr>
           </table>
@@ -163,7 +163,7 @@
 
      <div class="row">
        <div class="col-xs-12">
-         <a href="{{ '/report/pdf_report'.str_replace(Request::url(), '', Request::fullUrl()) }}" class="btn btn-primary pull-right" target="_blank"> <i class="fa fa-file-pdf-o"></i> Generate PDF</a>
+         <a href="{{ '/report/pdf_report'.str_replace(Request::url(), '', Request::fullUrl()) }}" class="btn btn-primary pull-right" target="_blank"> <i class="fa fa-file-pdf-o"></i> Généré PDF</a>
        </div>
      </div> 
   </section>

@@ -7,8 +7,8 @@
     <small></small>
   </h1>
   <ol class="breadcrumb">
-    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-    <li class="active">Edit Supplier</li>
+    <li><a href="#"><i class="fa fa-dashboard"></i> Accueil</a></li>
+    <li class="active">Editer Fournisseur</li>
   </ol>
 </section>
 
@@ -19,7 +19,7 @@
         <div class="col-sm-6 col-sm-offset-3">
           <div class="box">
           <div class="box-header with-border">
-            <h3 class="box-title">Edit Supplier</h3>
+            <h3 class="box-title">Editer Fournisseur</h3>
 
             <div class="box-tools pull-right">
               <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -39,8 +39,8 @@
                         
                         <div class="col-sm-6">
                           <div class="form-group">
-                            <label>Supplier Name</label><br>
-                            <input type="text" class="form-control" name="supplier_name" placeholder="Full name" value="{{ $supplier->supplier_name }}">
+                            <label>Nom Fournisseur</label><br>
+                            <input type="text" class="form-control" name="supplier_name" placeholder="nom complet" value="{{ $supplier->supplier_name }}">
                           </div>
                         </div>
 
@@ -57,8 +57,8 @@
                         
                         <div class="col-sm-12">
                           <div class="form-group">
-                            <label>Address</label><br>
-                            <textarea class="form-control" placeholder="Enter current address ... " name="supplier_address">{{ $supplier->supplier_address }}</textarea>
+                            <label>Adresse</label><br>
+                            <textarea class="form-control" placeholder="adresse courante ... " name="supplier_address">{{ $supplier->supplier_address }}</textarea>
                           </div>
                         </div>
 
@@ -75,7 +75,7 @@
 
                         <div class="col-sm-6">
                           <div class="form-group">
-                            <label>Alternate Mobile</label><br>
+                            <label>Alternative Mobile</label><br>
                             <input type="text" name="supplier_contact2" class ='form-control' placeholder = '' maxlength="11" minlength="10"  value="{{ $supplier->supplier_contact2 }}"/>
                           </div>
                         </div>
@@ -97,8 +97,8 @@
                     <!-- /.box-body -->
 
                     <div class="box-footer">
-                      <button type="reset" class="btn btn-danger pull-left">Reset</button>
-                      <button type="submit" class="btn btn-primary pull-right"><i class="fa fa-edit"></i> Update</button>
+                      <button type="reset" class="btn btn-danger pull-left">Réinitialiser</button>
+                      <button type="submit" class="btn btn-primary pull-right"><i class="fa fa-edit"></i> Editer</button>
                     </div>
             </form>
           </div>

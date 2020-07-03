@@ -7,8 +7,8 @@
     <small></small>
   </h1>
   <ol class="breadcrumb">
-    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-    <li class="active">Generate Report</li>
+    <li><a href="#"><i class="fa fa-dashboard"></i> Accueil</a></li>
+    <li class="active">Généré Rapport</li>
   </ol>
 </section>
 
@@ -29,7 +29,7 @@
         <div class="col-md-offset-2 col-md-8">
           <div class="box box-info">
           <div class="box-header with-bsales">
-            <h3 class="box-title">Generate Report</h3>
+            <h3 class="box-title">Généré Rapport</h3>
 
             <div class="box-tools pull-right">
               <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -49,11 +49,11 @@
                         
                         <div class="col-md-4">
                           <div class="form-group">
-                            <label>Report Type</label>
+                            <label>Type Rapport</label>
                             <select class="form-control" name="report_type">
                               <option selected="" disabled="" value="">- Select -</option>
-                              <option value="1">Purchase</option>
-                              <option value="2">Sales</option>
+                              <option value="1">Achats</option>
+                              <option value="2">Ventes</option>
                               {{-- <option value="3">Purchase Stock</option> --}}
                             </select>
                           </div>
@@ -61,7 +61,7 @@
 
                         <div class="col-md-4">
                           <div class="form-group">
-                            <label>From</label>
+                            <label>De</label>
                             <div class="input-group date">
                               <div class="input-group-addon">
                                 <i class="fa fa-calendar"></i>
@@ -73,7 +73,7 @@
 
                         <div class="col-md-4">
                           <div class="form-group">
-                            <label>To</label><br>
+                            <label>à</label><br>
                             <div class="input-group date">
                               <div class="input-group-addon">
                                 <i class="fa fa-calendar"></i>
@@ -90,8 +90,8 @@
                     <!-- /.box-body -->
 
                     <div class="box-footer">
-                      <button type="reset" class="btn btn-danger pull-left">Reset</button>
-                      <button type="submit" name="submitName" class="btn btn-primary pull-right"><i class="fa fa-line-chart"></i> Generate </button>
+                      <button type="reset" class="btn btn-danger pull-left">Réinitialiser</button>
+                      <button type="submit" name="submitName" class="btn btn-primary pull-right"><i class="fa fa-line-chart"></i> Généré </button>
                     </div>
             </form>
           </div> 

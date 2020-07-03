@@ -61,8 +61,8 @@
     <small></small>
   </h1>
   <ol class="breadcrumb">
-    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-    <li class="active">View Stock Category</li>
+    <li><a href="#"><i class="fa fa-dashboard"></i> Accueil</a></li>
+    <li class="active">Consulter Stock Categorie</li>
   </ol>
 </section>
 
@@ -83,7 +83,7 @@
         <div class="col-md-12">
           <div class="box box-info">
           <div class="box-header with-bstock_category">
-            <h3 class="box-title">View Stock Category</h3>
+            <h3 class="box-title">Consulter Stock Categorie</h3>
 
             <div class="box-tools pull-right">
               <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -109,12 +109,12 @@
                                data-sort-order="desc">
                             <thead>
                             <tr>
-                                <th data-field="id" data-align="center" data-sortable="true">Category ID</th>
-                                <th data-field="category_name" data-align="center" data-sortable="true">Category Name</th>
+                                <th data-field="id" data-align="center" data-sortable="true">Categorie ID</th>
+                                <th data-field="category_name" data-align="center" data-sortable="true">Nom Categorie</th>
                                 
                                 <th data-align="center" data-formatter="measuresFormatter"> Measures </th>
 
-                                <th data-align="center" data-formatter="unitFormatter"> Unit </th>
+                                <th data-align="center" data-formatter="unitFormatter"> Unités </th>
 
                                 <th data-align="center" data-formatter="actionFormatter" data-events="actionEvents"> Action </th>
                             </tr>

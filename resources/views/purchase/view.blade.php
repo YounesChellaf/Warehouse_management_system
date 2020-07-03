@@ -31,8 +31,8 @@
     <small></small>
   </h1>
   <ol class="breadcrumb">
-    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-    <li class="active">Add Purchase</li>
+    <li><a href="#"><i class="fa fa-dashboard"></i> Accueil</a></li>
+    <li class="active">Consulter Achat</li>
   </ol>
 </section>
 
@@ -53,7 +53,7 @@
         <div class="col-xs-12">
           <div class="box box-info">
           <div class="box-header with-bpurchase">
-            <h3 class="box-title">View Purchases</h3>
+            <h3 class="box-title">Consulter Achat</h3>
 
             <div class="box-tools pull-right">
               <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -80,23 +80,23 @@
                             <thead>
                             <tr>
                                 
-                                <th data-field="purchase_id" data-align="center" data-sortable="true">Purchase ID</th>
+                                <th data-field="purchase_id" data-align="center" data-sortable="true">Achat ID</th>
                                 
-                                <th data-field="supplier_name" data-align="center" data-sortable="true">Supplier</th>
+                                <th data-field="supplier_name" data-align="center" data-sortable="true">Fournisseur</th>
 
                                 <th data-field="opening_due" data-align="center" data-sortable="true">Opening Due</th>
 
                                 <th data-field="opening_balance" data-align="center" data-sortable="true">Opening Balance</th>
 
-                                <th data-field="purchase_total" data-align="center" data-sortable="true">Purchase Total</th>
+                                <th data-field="purchase_total" data-align="center" data-sortable="true">Achat Total</th>
 
-                                <th data-field="discount_amount" data-align="center" data-sortable="true">Discount</th>
+                                <th data-field="discount_amount" data-align="center" data-sortable="true">Réduction</th>
 
                                 <th data-field="tax_amount" data-align="center" data-sortable="true">Tax</th>
 
                                 <th data-field="grand_total" data-align="center" data-sortable="true">Grand total</th>
 
-                                <th data-field="payment" data-align="center" data-sortable="true">Payment</th>
+                                <th data-field="payment" data-align="center" data-sortable="true">Payement</th>
                                 
                                 <th data-field="closing_due" data-align="center" data-sortable="true">Closing Due</th>
 

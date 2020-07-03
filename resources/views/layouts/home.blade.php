@@ -33,9 +33,9 @@
     <!-- Logo -->
     <a href="{{ url('path') }}" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>M</b>S</span>
+      <span class="logo-mini"><b>D</b>B</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg">{{ config('app.name', 'Laravel') }}</span>
+      <span class="logo-lg">Dashboard</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -189,7 +189,7 @@
         </div>
         <div class="pull-left info">
           <p>{{ Auth::user()->name }}</p>
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          <a href="#"><i class="fa fa-circle text-success"></i> En Ligne</a>
         </div>
       </div>
       {{-- search form 
@@ -211,91 +211,91 @@
         </li>
 
         {{-- Navigation --}}
-          <li class="header">NAVIGATION</li>
+          <li class="header">Enrepot</li>
           
           <li class="treeview @if(Request::is('sales/*')) active @endif">
             <a href="#">
-              <i class="fa fa-shopping-cart"></i> <span>Sales</span>
+              <i class="fa fa-shopping-cart"></i> <span>Ventes</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
             </a>
             <ul class="treeview-menu">
-              <li class="@if(Request::is('sales/create')) active @endif"><a href="{{ url('/sales/create') }}"><i class="fa fa-circle-o"></i> Add Sales</a></li>
-              <li class="@if(Request::is('sales/view')) active @endif"><a href="{{ url('/sales/view') }}"><i class="fa fa-circle-o"></i> View Sales</a></li>
+              <li class="@if(Request::is('sales/create')) active @endif"><a href="{{ url('/sales/create') }}"><i class="fa fa-circle-o"></i> Ajouter Ventes</a></li>
+              <li class="@if(Request::is('sales/view')) active @endif"><a href="{{ url('/sales/view') }}"><i class="fa fa-circle-o"></i> Consulter Ventes</a></li>
             </ul>
           </li>
 
           <li class="treeview @if(Request::is('customer/*')) active @endif">
             <a href="#">
-              <i class="fa fa-group"></i> <span>Customers</span>
+              <i class="fa fa-group"></i> <span>Demandeurs</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
             </a>
             <ul class="treeview-menu">
-              <li class="@if(Request::is('customer/create')) active @endif"><a href="{{ url('/customer/create') }}"><i class="fa fa-circle-o"></i> Add Customer</a></li>
-              <li class="@if(Request::is('customer/view')) active @endif"><a href="{{ url('/customer/view') }}"><i class="fa fa-circle-o"></i> View Customer</a></li>
+              <li class="@if(Request::is('customer/create')) active @endif"><a href="{{ url('/customer/create') }}"><i class="fa fa-circle-o"></i> Ajouter Demandeurs</a></li>
+              <li class="@if(Request::is('customer/view')) active @endif"><a href="{{ url('/customer/view') }}"><i class="fa fa-circle-o"></i> Consulter Demandeurs</a></li>
             </ul>
           </li>
 
           <li class="treeview @if(Request::is('purchase/*')) active @endif">
             <a href="#">
-              <i class="fa fa-shopping-bag"></i> <span>Purchase</span>
+              <i class="fa fa-shopping-bag"></i> <span>Achats</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
             </a>
             <ul class="treeview-menu">
-              <li class="@if(Request::is('purchase/create')) active @endif"><a href="{{ url('/purchase/create') }}"><i class="fa fa-circle-o"></i> Add Purchase</a></li>
-              <li class="@if(Request::is('purchase/view')) active @endif"><a href="{{ url('/purchase/view') }}"><i class="fa fa-circle-o"></i> View Purchase</a></li>
+              <li class="@if(Request::is('purchase/create')) active @endif"><a href="{{ url('/purchase/create') }}"><i class="fa fa-circle-o"></i> Ajouter Achat</a></li>
+              <li class="@if(Request::is('purchase/view')) active @endif"><a href="{{ url('/purchase/view') }}"><i class="fa fa-circle-o"></i> Consulter Achat</a></li>
             </ul>
           </li>
 
           <li class="treeview @if(Request::is('supplier/*')) active @endif">
             <a href="#">
-              <i class="fa fa-truck"></i> <span>Supplier</span>
+              <i class="fa fa-truck"></i> <span>Fournisseurs</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
             </a>
             <ul class="treeview-menu">
-              <li class="@if(Request::is('supplier/create')) active @endif"><a href="{{ url('/supplier/create') }}"><i class="fa fa-circle-o"></i> Add Supplier</a></li>
-              <li class="@if(Request::is('supplier/view')) active @endif"><a href="{{ url('/supplier/view') }}"><i class="fa fa-circle-o"></i> View Supplier</a></li>
+              <li class="@if(Request::is('supplier/create')) active @endif"><a href="{{ url('/supplier/create') }}"><i class="fa fa-circle-o"></i> Ajouter Fournisseurs</a></li>
+              <li class="@if(Request::is('supplier/view')) active @endif"><a href="{{ url('/supplier/view') }}"><i class="fa fa-circle-o"></i> Consulter Fournisseurs</a></li>
             </ul>
           </li>
 
           <li class="treeview @if(Request::is('stock/*') || Request::is('category/*')) active @endif">
             <a href="#">
-              <i class="fa fa-briefcase"></i> <span>Stocks / Product</span>
+              <i class="fa fa-briefcase"></i> <span>Stocks / Produits</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
             </a>
             <ul class="treeview-menu">
-              <li class="@if(Request::is('stock/create')) active @endif"><a href="{{ url('/stock/create') }}"><i class="fa fa-circle-o"></i> Add Stock / Product</a></li>
-              <li class="@if(Request::is('stock/view')) active @endif"><a href="{{ url('/stock/view') }}"><i class="fa fa-circle-o"></i> View Stock / Product</a></li>
-              <li class="@if(Request::is('category/create')) active @endif"><a href="{{ url('/category/create') }}"><i class="fa fa-circle-o"></i> Add Stock Category</a></li>
-              <li class="@if(Request::is('category/view')) active @endif"><a href="{{ url('/category/view') }}"><i class="fa fa-circle-o"></i> View Stock Category</a></li>
-              <li class="@if(Request::is('stock/view/availability')) active @endif"><a href="{{ url('/stock/view/availability') }}"><i class="fa fa-circle-o"></i> View Stock Availability</a></li>
+              <li class="@if(Request::is('stock/create')) active @endif"><a href="{{ url('/stock/create') }}"><i class="fa fa-circle-o"></i> Ajouter Stock / Produit</a></li>
+              <li class="@if(Request::is('stock/view')) active @endif"><a href="{{ url('/stock/view') }}"><i class="fa fa-circle-o"></i> Consulter Stock / Produit</a></li>
+              <li class="@if(Request::is('category/create')) active @endif"><a href="{{ url('/category/create') }}"><i class="fa fa-circle-o"></i> Ajouter Stock Categorie</a></li>
+              <li class="@if(Request::is('category/view')) active @endif"><a href="{{ url('/category/view') }}"><i class="fa fa-circle-o"></i> Consulter Stock Categorie</a></li>
+              <li class="@if(Request::is('stock/view/availability')) active @endif"><a href="{{ url('/stock/view/availability') }}"><i class="fa fa-circle-o"></i> Consulter Disponibilité Stock</a></li>
             </ul>
           </li>
 
           <li class="treeview @if(Request::is('transaction/payments')) active @endif">
             <a href="@if(Request::is('transaction/payments')) javascript:void @else {{ url('/transaction/payments') }} @endif">
-              <i class="fa fa-inr"></i> <span>Payments</span>
+              <i class="fa fa-inr"></i> <span>Payements</span>
             </a>
           </li>
 
           <li class="treeview @if(Request::is('transaction/outstandings')) active @endif">
             <a href="@if(Request::is('transaction/outstandings')) javascript:void @else {{ url('/transaction/outstandings') }} @endif">
-              <i class="fa fa-credit-card"></i> <span>Outstandings</span>
+              <i class="fa fa-credit-card"></i> <span>Encours</span>
             </a>
           </li>
 
           <li class="treeview @if(Request::is('report/generate')) active @endif">
             <a href="@if(Request::is('report/generate')) javascript:void @else /report/generate @endif">
-              <i class="fa fa-line-chart"></i> <span>Reports</span>
+              <i class="fa fa-line-chart"></i> <span>Rapports</span>
             </a>
           </li>
 
@@ -303,12 +303,12 @@
 
         {{-- Direct Links --}}
 
-          <li class="header">Direct Links</li>
-          <li class="@if(Request::is('sales/create')) active @endif"><a href="@if(Request::is('sales/create')) javascript:void @else /sales/create @endif"><i class="fa fa-circle-o text-success"></i> <span>Add Sales</span></a></li>
-          <li class="@if(Request::is('purchase/create')) active @endif"><a href="@if(Request::is('purchase/create')) javascript:void @else /purchase/create @endif"><i class="fa fa-circle-o text-red"></i> <span>Add Purchase</span></a></li>
-          <li class="@if(Request::is('supplier/create')) active @endif"><a href="@if(Request::is('supplier/create')) javascript:void @else /supplier/create @endif"><i class="fa fa-circle-o text-aqua"></i> <span>Add Supplier</span></a></li>
-          <li class="@if(Request::is('customer/create')) active @endif"><a href="@if(Request::is('customer/create')) javascript:void @else /customer/create @endif"><i class="fa fa-circle-o text-yellow"></i> <span>Add Customer</span></a></li>
-          <li class="@if(Request::is('report/generate')) active @endif"><a href="@if(Request::is('report/generate')) javascript:void @else /report/generate @endif"><i class="fa fa-circle-o text-primary"></i> <span>Generate Report</span></a></li>
+          <li class="header">Liens Directes</li>
+          <li class="@if(Request::is('sales/create')) active @endif"><a href="@if(Request::is('sales/create')) javascript:void @else /sales/create @endif"><i class="fa fa-circle-o text-success"></i> <span>Ajouter Ventes</span></a></li>
+          <li class="@if(Request::is('purchase/create')) active @endif"><a href="@if(Request::is('purchase/create')) javascript:void @else /purchase/create @endif"><i class="fa fa-circle-o text-red"></i> <span>Ajouter Achats</span></a></li>
+          <li class="@if(Request::is('supplier/create')) active @endif"><a href="@if(Request::is('supplier/create')) javascript:void @else /supplier/create @endif"><i class="fa fa-circle-o text-aqua"></i> <span>Ajouter Fournisseurs</span></a></li>
+          <li class="@if(Request::is('customer/create')) active @endif"><a href="@if(Request::is('customer/create')) javascript:void @else /customer/create @endif"><i class="fa fa-circle-o text-yellow"></i> <span>Ajouter Demandeurs</span></a></li>
+          <li class="@if(Request::is('report/generate')) active @endif"><a href="@if(Request::is('report/generate')) javascript:void @else /report/generate @endif"><i class="fa fa-circle-o text-primary"></i> <span>Généré Rapports</span></a></li>
 
         {{-- END OF Direct Links --}}
 
@@ -330,7 +330,7 @@
     <div class="pull-right hidden-xs">
       <b>Version</b> 1.0
     </div>
-    <strong>Copyright &copy; 2017 <a href="http://www.firstfeetconsulting.com/" target="_blank">First Feet Business Services</a></strong>
+    <strong>Copyright &copy; 2020 <a>Azimut solutions</a></strong>
   </footer>
 
   <!-- Control Sidebar -->

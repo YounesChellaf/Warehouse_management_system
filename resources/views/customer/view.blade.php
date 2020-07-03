@@ -27,8 +27,8 @@
     <small></small>
   </h1>
   <ol class="breadcrumb">
-    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-    <li class="active">Add Customer</li>
+    <li><a href="#"><i class="fa fa-dashboard"></i> Accueil</a></li>
+    <li class="active">Consulter Client</li>
   </ol>
 </section>
 
@@ -49,7 +49,7 @@
         <div class="col-xs-12">
           <div class="box box-info">
           <div class="box-header with-bcustomer">
-            <h3 class="box-title">View Customers</h3>
+            <h3 class="box-title">Consulter Client</h3>
 
             <div class="box-tools pull-right">
               <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -75,12 +75,12 @@
                                data-sort-order="desc">
                             <thead>
                             <tr>
-                                <th data-field="id" data-align="center" data-sortable="true">Customer ID</th>
-                                <th data-field="customer_name" data-align="center" data-sortable="true">Name</th>
+                                <th data-field="id" data-align="center" data-sortable="true">Client ID</th>
+                                <th data-field="customer_name" data-align="center" data-sortable="true">Nom</th>
                                 <th data-field="customer_email" data-align="center" data-sortable="true">E-Mail</th>
-                                <th data-field="customer_address" data-align="center" data-sortable="true">Address</th>
+                                <th data-field="customer_address" data-align="center" data-sortable="true">Adresse</th>
                                 <th data-field="customer_contact1" data-align="center" data-sortable="true">Mobile</th>
-                                <th data-field="customer_contact2" data-align="center" data-sortable="true">Alternate Mobile</th>
+                                <th data-field="customer_contact2" data-align="center" data-sortable="true">Alternative Mobile</th>
                                 <th data-field="balance" data-align="center" data-sortable="true">Balance</th>
                                 <th data-align="center" data-formatter="actionFormatter" data-events="actionEvents" width="200px"> Action </th>
                             </tr>
