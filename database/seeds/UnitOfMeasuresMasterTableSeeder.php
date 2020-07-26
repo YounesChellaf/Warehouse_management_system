@@ -20,7 +20,7 @@ class UnitOfMeasuresMasterTableSeeder extends Seeder
             0 => 
             array (
                 'uom_id' => 1,
-                'name' => 'Millimeter',
+                'name' => 'Millimetre',
                 'symbol' => 'mm',
                 'measure_id' => '1',
                 'created_at' => '2017-02-14 14:32:46',
@@ -30,7 +30,7 @@ class UnitOfMeasuresMasterTableSeeder extends Seeder
             1 => 
             array (
                 'uom_id' => 2,
-                'name' => 'Centimeter',
+                'name' => 'Centimetre',
                 'symbol' => 'cm',
                 'measure_id' => '1',
                 'created_at' => '2017-02-14 14:32:46',
@@ -40,7 +40,7 @@ class UnitOfMeasuresMasterTableSeeder extends Seeder
             2 => 
             array (
                 'uom_id' => 3,
-                'name' => 'Inch',
+                'name' => 'Pouce',
                 'symbol' => 'in',
                 'measure_id' => '1',
                 'created_at' => '2017-02-14 14:33:24',
@@ -60,7 +60,7 @@ class UnitOfMeasuresMasterTableSeeder extends Seeder
             4 => 
             array (
                 'uom_id' => 5,
-                'name' => 'Millimeter',
+                'name' => 'Millimetre',
                 'symbol' => 'mm',
                 'measure_id' => '2',
                 'created_at' => '2017-02-14 14:32:46',
@@ -70,7 +70,7 @@ class UnitOfMeasuresMasterTableSeeder extends Seeder
             5 => 
             array (
                 'uom_id' => 6,
-                'name' => 'Centimeter',
+                'name' => 'Centimetre',
                 'symbol' => 'cm',
                 'measure_id' => '2',
                 'created_at' => '2017-02-14 14:32:46',
@@ -80,7 +80,7 @@ class UnitOfMeasuresMasterTableSeeder extends Seeder
             6 => 
             array (
                 'uom_id' => 7,
-                'name' => 'Inch',
+                'name' => 'Pouce',
                 'symbol' => 'in',
                 'measure_id' => '2',
                 'created_at' => '2017-02-14 14:33:24',
@@ -100,7 +100,7 @@ class UnitOfMeasuresMasterTableSeeder extends Seeder
             8 => 
             array (
                 'uom_id' => 9,
-                'name' => 'Millimeter',
+                'name' => 'Millimetre',
                 'symbol' => 'mm',
                 'measure_id' => '3',
                 'created_at' => '2017-02-14 14:32:46',
@@ -110,7 +110,7 @@ class UnitOfMeasuresMasterTableSeeder extends Seeder
             9 => 
             array (
                 'uom_id' => 10,
-                'name' => 'Centimeter',
+                'name' => 'Centimetre',
                 'symbol' => 'cm',
                 'measure_id' => '3',
                 'created_at' => '2017-02-14 14:32:46',
@@ -120,7 +120,7 @@ class UnitOfMeasuresMasterTableSeeder extends Seeder
             10 => 
             array (
                 'uom_id' => 11,
-                'name' => 'Inch',
+                'name' => 'Pouce',
                 'symbol' => 'in',
                 'measure_id' => '3',
                 'created_at' => '2017-02-14 14:33:24',
@@ -140,7 +140,7 @@ class UnitOfMeasuresMasterTableSeeder extends Seeder
             12 => 
             array (
                 'uom_id' => 13,
-                'name' => 'Gauge',
+                'name' => 'Jauge',
                 'symbol' => 'ga.',
                 'measure_id' => '4',
                 'created_at' => '2017-02-14 14:29:04',
@@ -150,7 +150,7 @@ class UnitOfMeasuresMasterTableSeeder extends Seeder
             13 => 
             array (
                 'uom_id' => 14,
-                'name' => 'Millimeter',
+                'name' => 'Millimetre',
                 'symbol' => 'mm',
                 'measure_id' => '4',
                 'created_at' => '2017-02-14 14:32:46',
@@ -160,7 +160,7 @@ class UnitOfMeasuresMasterTableSeeder extends Seeder
             14 => 
             array (
                 'uom_id' => 15,
-                'name' => 'Gram',
+                'name' => 'Grame',
                 'symbol' => 'g',
                 'measure_id' => '5',
                 'created_at' => '2017-02-14 14:30:05',
@@ -170,7 +170,7 @@ class UnitOfMeasuresMasterTableSeeder extends Seeder
             15 => 
             array (
                 'uom_id' => 16,
-                'name' => 'Killogram',
+                'name' => 'Killograme',
                 'symbol' => 'kg',
                 'measure_id' => '5',
                 'created_at' => '2017-02-14 14:33:24',
@@ -180,7 +180,7 @@ class UnitOfMeasuresMasterTableSeeder extends Seeder
             16 => 
             array (
                 'uom_id' => 17,
-                'name' => 'Pounds',
+                'name' => 'Livres',
                 'symbol' => 'lbs',
                 'measure_id' => '5',
                 'created_at' => '2017-02-14 14:30:40',

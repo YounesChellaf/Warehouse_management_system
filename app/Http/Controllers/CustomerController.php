@@ -93,11 +93,11 @@ class CustomerController extends Controller
             \App\Models\CustomerDetail::create($request->all());
 
             $messageType = 1;
-            $message = "Customer created successfully !";
+            $message = "client crée avec succés !";
 
         } catch(\Illuminate\Database\QueryException $ex){  
             $messageType = 2;
-            $message = "Customer creation failed !";            
+            $message = "client échec !";            
         }
 
         return redirect(url("/customer/view"))->with('messageType',$messageType)->with('message',$message);

@@ -129,14 +129,14 @@ class PurchaseController extends Controller
         \App\Models\Transaction::create($transaction_details);                                     
 
             $messageType = 1;
-            $message = "Purchase created successfully !";
+            $message = "Achat crée avec succés !";
         try {
             
             
 
         } catch(\Illuminate\Database\QueryException $ex){  
             $messageType = 2;
-            $message = "Purchase creation failed !";            
+            $message = "Achat échec !";            
         }
 
         return redirect(url("/purchase/view"))->with('messageType',$messageType)->with('message',$message);

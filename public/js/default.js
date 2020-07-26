@@ -663,32 +663,32 @@ $( document ).ready(function() {
                         }
                     },
 
-                    customer_contact1: {
-                        validators: {
-                            notEmpty: {
-                                message: "Mobile number is required "
-                            },
-                            stringLength: {
-                                min: 10,max: 11,message: 'Mobile number should contain 10 to 11 digits '
-                            },
-                            regexp: {
-                                regexp: '^([0|\[0-9]{1,5})?([7-9][0-9]{9})$',
-                                message: 'Enter valid mobile number' 
-                            }
-                        }
-                    },
+                    // customer_contact1: {
+                    //     validators: {
+                    //         notEmpty: {
+                    //             message: "Mobile number is required "
+                    //         },
+                    //         stringLength: {
+                    //             min: 10,max: 11,message: 'Mobile number should contain 10 to 11 digits '
+                    //         },
+                    //         regexp: {
+                    //             regexp: '^([0|\[0-9]{1,5})?([7-9][0-9]{9})$',
+                    //             message: 'Enter valid mobile number' 
+                    //         }
+                    //     }
+                    // },
 
-                    customer_contact2: {
-                        validators: {
-                            stringLength: {
-                                min: 10,max: 11,message: 'Mobile number should contain  10 to 11 digits '
-                            },
-                            regexp: {
-                                regexp: '^([0|\[0-9]{1,5})?([7-9][0-9]{9})$',
-                                message: 'Enter valid mobile number' 
-                            }
-                        }
-                    },
+                    // customer_contact2: {
+                    //     validators: {
+                    //         stringLength: {
+                    //             min: 10,max: 11,message: 'Mobile number should contain  10 to 11 digits '
+                    //         },
+                    //         regexp: {
+                    //             regexp: '^([0|\[0-9]{1,5})?([7-9][0-9]{9})$',
+                    //             message: 'Enter valid mobile number' 
+                    //         }
+                    //     }
+                    // },
 
                     customer_address: {
                         validators: {
@@ -745,32 +745,32 @@ $( document ).ready(function() {
                         }
                     },
 
-                    supplier_contact1: {
-                        validators: {
-                            notEmpty: {
-                                message: "Mobile number is required "
-                            },
-                            stringLength: {
-                                min: 10,max: 11,message: 'Mobile number should contain 10 to 11 digits '
-                            },
-                            regexp: {
-                                regexp: '^([0|\[0-9]{1,5})?([7-9][0-9]{9})$',
-                                message: 'Enter valid mobile number' 
-                            }
-                        }
-                    },
+                    // supplier_contact1: {
+                    //     validators: {
+                    //         notEmpty: {
+                    //             message: "Mobile number is required "
+                    //         },
+                    //         stringLength: {
+                    //             min: 10,max: 11,message: 'Mobile number should contain 10 to 11 digits '
+                    //         },
+                    //         regexp: {
+                    //             regexp: '^([0|\[0-9]{1,5})?([7-9][0-9]{9})$',
+                    //             message: 'Enter valid mobile number' 
+                    //         }
+                    //     }
+                    // },
 
-                    supplier_contact2: {
-                        validators: {
-                            stringLength: {
-                                min: 10,max: 11,message: 'Mobile number should contain  10 to 11 digits '
-                            },
-                            regexp: {
-                                regexp: '^([0|\[0-9]{1,5})?([7-9][0-9]{9})$',
-                                message: 'Enter valid mobile number' 
-                            }
-                        }
-                    },
+                    // supplier_contact2: {
+                    //     validators: {
+                    //         stringLength: {
+                    //             min: 10,max: 11,message: 'Mobile number should contain  10 to 11 digits '
+                    //         },
+                    //         regexp: {
+                    //             regexp: '^([0|\[0-9]{1,5})?([7-9][0-9]{9})$',
+                    //             message: 'Enter valid mobile number' 
+                    //         }
+                    //     }
+                    // },
 
                     supplier_address: {
                         validators: {

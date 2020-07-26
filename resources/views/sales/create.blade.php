@@ -38,7 +38,7 @@
                       <div class="box box-default">
                         <div class="box-body">
                           <div class="row">
-                            <div class="col-sm-3">
+                            <div class="col-sm-4">
                               <div class="form-group">
                                 <label>Nom du client</label>
                                 <input type="text" class="form-control search_customer_name" placeholder="nom" name="customer_name">
@@ -48,28 +48,28 @@
                                 <input type="hidden" class="search_customer_id" name="customer_id">
                               </div>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-4">
                               <div class="form-group">
                                 <label>Adresse</label><br>
                                 <input type="text" class="form-control search_customer_address" name="customer_address">
                               </div>
                             </div>
 
-                            <div class="col-sm-2">
+                            <div class="col-sm-4">
                               <div class="form-group">
                                 <label>Contact</label><br>
                                 <input type="text" class="form-control search_customer_contact1" name="customer_contact1">
                               </div>
                             </div>
 
-                            <div class="col-sm-2">
+                            <div class="col-sm-2 hidden">
                               <div class="form-group">
                                 <label>Opening Balance</label><br>
                                 <input type="text" name="opening_balance" class="form-control opening_balance" readonly="">
                               </div>
                             </div>
 
-                            <div class="col-sm-2">
+                            <div class="col-sm-2 hidden">
                               <div class="form-group">
                                 <label>Opening Due</label><br>
                                 <input type="text" name="opening_due" class="form-control opening_due" readonly="">
@@ -88,7 +88,7 @@
                               <thead>
                                 <tr>
                                   <th>Stock Catagorie</th>
-                                  <th>Quanitité physique</th>
+                                  <th>Quantité physique</th>
                                   <th>Achat Cout / Unité</th>
                                   <th>Vente Cout / Unité</th>
                                   <th>No.Unités</th>
@@ -112,7 +112,7 @@
                                     <input type="text" class="form-control search_purchase_cost" name="purchase_cost[]" readonly="">
                                   </td>
                                   <td width="150px">
-                                    <input type="text" class="form-control search_selling_cost" name="selling_cost[]" >
+                                    <input type="text" class="form-control search_selling_cost" name="selling_cost[]">
                                   </td>
                                   
                                   <td width="50px">
@@ -143,7 +143,7 @@
                             <div class="row">
                               <div class="col-md-offset-8 col-md-4">
                                 <div class="form-group">
-                                  <label>total de ventres</label><br>
+                                  <label>total de ventes</label><br>
                                   <input type="text" class="form-control sales_total" readonly="" name="sales_total">
                                 </div>
                               </div>
@@ -194,42 +194,42 @@
                         <div class="box-body">
                           <div class="row">
 
-                            <div class="col-sm-2">
+                            <div class="col-sm-3">
                               <div class="form-group">
                                 <label>Description Ventes</label><br>
                                 <textarea class="form-control" style="height: 35px;" name="sales_description"></textarea>
                               </div>
                             </div>
                             
-                            <div class="col-sm-2">
+                            <div class="col-sm-3">
                               <div class="form-group">
                                 <label>Grand Total</label><br>
-                                <input type="text" class="form-control grand_total" name="grand_total" readonly="">
+                                <input type="text" class="form-control grand_total" name="grand_total" readonly="" value="0">
                               </div>
                             </div>
 
-                            <div class="col-sm-2">
+                            <div class="col-sm-3">
                               <div class="form-group">
                                 <label>Payement</label><br>
                                 <input type="text" class="form-control purchase_payment" name="payment">
                               </div>
                             </div>
 
-                            <div class="col-sm-2">
+                            <div class="col-sm-2 hidden">
                               <div class="form-group">
                                 <label>Closing Balance</label><br>
                                 <input type="text" class="form-control closing_balance" name="closing_balance" readonly="">
                               </div>
                             </div>
 
-                            <div class="col-sm-2">
+                            <div class="col-sm-2 hidden">
                               <div class="form-group">
                                 <label>Closing Due</label><br>
                                 <input type="text" class="form-control closing_due" name="closing_due" readonly="">
                               </div>
                             </div>
 
-                            <div class="col-sm-2">
+                            <div class="col-sm-3">
                               <div class="form-group">
                                 <label>Mode</label>
                                 <select class="form-control" name="mode">

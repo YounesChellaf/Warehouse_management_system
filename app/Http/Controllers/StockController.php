@@ -138,11 +138,11 @@ class StockController extends Controller
             $stock_units_detail = \App\Models\StockUnitsDetail::insert($stock_units);
 
             $messageType = 1;
-            $message = "Stock created successfully !";
+            $message = "Produit crée avec succés !";
 
         } catch(\Illuminate\Database\QueryException $ex){  
             $messageType = 2;
-            $message = "Stock creation failed !";            
+            $message = "Produit échec !";            
         }
 
         return redirect(url("/stock/view"))->with('messageType',$messageType)->with('message',$message);

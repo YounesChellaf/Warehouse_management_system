@@ -76,7 +76,7 @@
       <div class="col-xs-12">
         <h2 class="page-header">
           <i class="fa fa-shopping-bag"></i> Rapport Ventes
-          <small class="pull-right">Dated: {{ \Carbon\Carbon::now()->format('jS M Y - h:i:s A') }}</small>
+          <small class="pull-right">Daté: {{ \Carbon\Carbon::now()->format('jS M Y - h:i:s A') }}</small>
         </h2>
       </div>
       <!-- /.col -->
@@ -106,10 +106,10 @@
                 <td>{{ \Carbon\Carbon::parse($value->created_at)->format('jS M Y') }}</td>
                 <td>{{ $value->sales_id }}</td>
                 <td>{{ $value->customer->customer_name }}</td>
-                <td> <i class="fa fa-inr"></i> {{ $value->subtotal }}</td>
-                <td> <i class="fa fa-inr"></i> {{ $value->payment }}</td>
-                <td> <i class="fa fa-inr"></i> {{ $value->balance }}</td>
-                <td> <i class="fa fa-inr"></i> {{ $value->due }}</td>
+                <td> DZD {{ $value->subtotal }}</td>
+                <td> DZD {{ $value->payment }}</td>
+                <td> DZD {{ $value->balance }}</td>
+                <td> DZD {{ $value->due }}</td>
               </tr>
             @endforeach
           </tbody>
@@ -119,7 +119,7 @@
     </div>
     <!-- /.row -->
 
-    <div class="row">
+    {{-- <div class="row">
       <!-- accepted payments column -->
       <div class="col-xs-6">
         <p class="lead">Méthode payments:</p>
@@ -140,32 +140,32 @@
           <table class="table">
             <tr>
               <th style="width:50%">Total Achat:</th>
-              <td> <i class="fa fa-inr"></i> {{ $total['purchase'] }}</td>
+              <td> DZD {{ $total['purchase'] }}</td>
             </tr>
             <tr>
               <th>Montant payé:</th>
-              <td> <i class="fa fa-inr"></i> {{ $total['payment'] }}</td>
+              <td> DZD {{ $total['payment'] }}</td>
             </tr>
             <tr>
               <th>Balance Montant:</th>
-              <td> <i class="fa fa-inr"></i> {{ $total['balance'] }}</td>
+              <td> DZD {{ $total['balance'] }}</td>
             </tr>
             <tr>
               <th>Reste Montant:</th>
-              <td> <i class="fa fa-inr"></i> {{ $total['due'] }}</td>
+              <td> DZD {{ $total['due'] }}</td>
             </tr>
           </table>
         </div>
       </div>
       <!-- /.col -->
-    </div>
+    </div> --}}
     <!-- /.row -->
 
-     <div class="row">
+     {{-- <div class="row">
        <div class="col-xs-12">
          <a href="{{ '/report/pdf_report'.str_replace(Request::url(), '', Request::fullUrl()) }}" class="btn btn-primary pull-right" target="_blank"> <i class="fa fa-file-pdf-o"></i> Généré PDF</a>
        </div>
-     </div> 
+     </div>  --}}
   </section>
 
     </section>

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\CustomerDetail;
 class SalesController extends Controller
 {
     /**
@@ -40,7 +40,6 @@ class SalesController extends Controller
 
         $rows = \App\Models\SalesDetail::where(function($query) use($request){
                       $query->orwhere('sales_id','like',$request['search'])
-                      
                       ->orwhere('customer_name','like',$request['search']);
                   })->with('stock')->with('customer')->with('category')->orderBy($request['sort'],$request['order'])
                     ->skip($request['offset'])
@@ -49,7 +48,6 @@ class SalesController extends Controller
 
         $total = \App\Models\SalesDetail::where(function($query) use($request){
                       $query->orwhere('sales_id','like',$request['search'])
-                      
                       ->orwhere('customer_name','like',$request['search']);
                   })->count();
 
@@ -70,6 +68,12 @@ class SalesController extends Controller
     {
 
         return view('sales.create');
+    }
+
+    public function createInt()
+    {
+        $customer_detail = CustomerDetail::where('customer_name','interne')->first();
+        return view('sales.create_int')->with('interne_client',$customer_detail);
     }
 
     /**
@@ -130,14 +134,14 @@ class SalesController extends Controller
         \App\Models\Transaction::create($transaction_details);                                      
 
             $messageType = 1;
-            $message = "Sales created successfully !";
+            $message = "Vente crée avec succés !";
         try {
             
             
 
         } catch(\Illuminate\Database\QueryException $ex){  
             $messageType = 2;
-            $message = "Sales creation failed !";            
+            $message = "Vente échec !";            
         }
 
         return redirect(url("/sales/view"))->with('messageType',$messageType)->with('message',$message);

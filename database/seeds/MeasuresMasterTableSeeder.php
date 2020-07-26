@@ -20,12 +20,12 @@ class MeasuresMasterTableSeeder extends Seeder
             0 => 
             array (
                 'measure_id' => 1,
-                'name' => 'Length',
+                'name' => 'Longueur',
             ),
             1 => 
             array (
                 'measure_id' => 2,
-                'name' => 'Breadth',
+                'name' => 'Largeur',
             ),
             2 => 
             array (
@@ -35,12 +35,12 @@ class MeasuresMasterTableSeeder extends Seeder
             3 => 
             array (
                 'measure_id' => 4,
-                'name' => 'Thickness',
+                'name' => 'Epaisseur',
             ),
             4 => 
             array (
                 'measure_id' => 5,
-                'name' => 'Weight',
+                'name' => 'Poids',
             ),
             5 => 
             array (

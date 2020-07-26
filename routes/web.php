@@ -94,6 +94,7 @@ Route::group(['prefix' => 'purchase'], function () {
 Route::group(['prefix' => 'sales'], function () {
 
 	Route::get('/create', 'SalesController@create');
+	Route::get('/create/int', 'SalesController@createInt');
 	Route::post('/store', 'SalesController@store');
 	Route::get('/view', 'SalesController@view');
 	Route::get('/index', 'SalesController@index');

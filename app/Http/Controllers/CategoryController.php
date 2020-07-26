@@ -101,11 +101,11 @@ class CategoryController extends Controller
             \App\Models\CategoryUnitsMaster::insert($data);
 
             $messageType = 1;
-            $message = "Category created successfully !";
+            $message = "Categorié crée avec succés !";
 
         } catch(\Illuminate\Database\QueryException $ex){  
             $messageType = 2;
-            $message = "Category creation failed !";            
+            $message = "Categorie échec !";            
         }
 
         return redirect(url("/category/view"))->with('messageType',$messageType)->with('message',$message);

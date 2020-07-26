@@ -222,6 +222,7 @@
             </a>
             <ul class="treeview-menu">
               <li class="@if(Request::is('sales/create')) active @endif"><a href="{{ url('/sales/create') }}"><i class="fa fa-circle-o"></i> Ajouter Ventes</a></li>
+              <li class="@if(Request::is('sales/create/int')) active @endif"><a href="{{ url('/sales/create/int') }}"><i class="fa fa-circle-o"></i> Ajouter Distributions</a></li>
               <li class="@if(Request::is('sales/view')) active @endif"><a href="{{ url('/sales/view') }}"><i class="fa fa-circle-o"></i> Consulter Ventes</a></li>
             </ul>
           </li>

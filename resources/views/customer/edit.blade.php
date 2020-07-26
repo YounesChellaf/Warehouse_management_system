@@ -69,14 +69,14 @@
                         <div class="col-sm-6">
                           <div class="form-group">
                             <label>Contact Mobile</label><br>
-                            <input type="text" name="customer_contact1" class ='form-control' placeholder = '' required="required" maxlength="11" minlength="10"  value="{{ $customer->customer_contact1 }}"/>
+                            <input type="text" name="customer_contact1" class ='form-control' placeholder = '' required="required" value="{{ $customer->customer_contact1 }}"/>
                           </div>
                         </div>
 
                         <div class="col-sm-6">
                           <div class="form-group">
                             <label>Alternative Mobile</label><br>
-                            <input type="text" name="customer_contact2" class ='form-control' placeholder = '' maxlength="11" minlength="10"  value="{{ $customer->customer_contact2 }}"/>
+                            <input type="text" name="customer_contact2" class ='form-control' placeholder = '' value="{{ $customer->customer_contact2 }}"/>
                           </div>
                         </div>
 

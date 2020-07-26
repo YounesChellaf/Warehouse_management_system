@@ -93,11 +93,11 @@ class SupplierController extends Controller
             \App\Models\SupplierDetail::create($request->all());
 
             $messageType = 1;
-            $message = "Supplier created successfully !";
+            $message = "Fournisseur crée avec succés !";
 
         } catch(\Illuminate\Database\QueryException $ex){  
             $messageType = 2;
-            $message = "Supplier creation failed !";            
+            $message = "Fournisseur échec !";            
         }
 
         return redirect(url("/supplier/view"))->with('messageType',$messageType)->with('message',$message);
