@@ -168,7 +168,7 @@ class SupplierController extends Controller
             $supplier->delete();    
 
             $messageType = 1;
-            $message = "Supplier ".$supplier->supplier_name." details deleted successfully !";
+            $message = "Supplier ".$supplier->supplier_name." details supprimé avec succés !";
 
         } catch(\Illuminate\Database\QueryException $ex){  
             $messageType = 2;

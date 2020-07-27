@@ -168,7 +168,7 @@ class CustomerController extends Controller
             $customer->delete();    
 
             $messageType = 1;
-            $message = "Customer ".$customer->customer_name." details deleted successfully !";
+            $message = "Customer ".$customer->customer_name." details supprimé avec succés !";
 
         } catch(\Illuminate\Database\QueryException $ex){  
             $messageType = 2;

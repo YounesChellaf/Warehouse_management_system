@@ -255,7 +255,7 @@ class StockController extends Controller
             $stock->delete();    
 
             $messageType = 1;
-            $message = "Stock ".$stock->stock_name." details deleted successfully !";
+            $message = "Stock ".$stock->stock_name." details supprimé avec succés !";
 
         } catch(\Illuminate\Database\QueryException $ex){  
             $messageType = 2;

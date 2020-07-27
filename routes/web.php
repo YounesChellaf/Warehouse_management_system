@@ -36,6 +36,34 @@ Route::group(['prefix' => 'customer'], function () {
 
 });
 
+Route::group(['prefix' => 'residant'], function () {
+
+	Route::get('/create', 'ResidantController@create');
+	Route::post('/store', 'ResidantController@store');
+	Route::get('/view', 'ResidantController@view');
+	Route::get('/index', 'ResidantController@index');
+	Route::get('/destroy/{id}', 'ResidantController@destroy');
+});
+
+Route::group(['prefix' => 'worker'], function () {
+
+	Route::get('/create', 'WorkerController@create');
+	Route::post('/store', 'WorkerController@store');
+	Route::get('/view', 'WorkerController@view');
+	Route::get('/index', 'WorkerController@index');
+	Route::get('/destroy/{id}', 'WorkerController@destroy');
+});
+
+Route::group(['prefix' => 'maintenance'], function () {
+
+	//Route::post('/store', 'MaintenanceController@store');
+	Route::get('/view', 'MaintenanceController@view');
+	Route::get('/index', 'MaintenanceController@index');
+	Route::get('/edit/{id}', 'MaintenanceController@edit');
+	Route::post('/update/{id}', 'MaintenanceController@update');
+	Route::get('/destroy/{id}', 'MaintenanceController@destroy');
+});
+
 Route::group(['prefix' => 'supplier'], function () {
 
 	Route::get('/create', 'SupplierController@create');

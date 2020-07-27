@@ -211,7 +211,7 @@
         </li>
 
         {{-- Navigation --}}
-          <li class="header">Enrepot</li>
+          <li class="header">Entrepot</li>
           
           <li class="treeview @if(Request::is('sales/*')) active @endif">
             <a href="#">
@@ -284,7 +284,7 @@
 
           <li class="treeview @if(Request::is('transaction/payments')) active @endif">
             <a href="@if(Request::is('transaction/payments')) javascript:void @else {{ url('/transaction/payments') }} @endif">
-              <i class="fa fa-inr"></i> <span>Payements</span>
+              <i class="fa fa-money"></i> <span>Payements</span>
             </a>
           </li>
 
@@ -301,6 +301,47 @@
           </li>
 
         {{-- END OF NAVIGATION --}}
+
+        {{-- Maintainance --}}
+        <li class="header">Maintainance</li>
+        <li class="treeview @if(Request::is('residant/*')) active @endif">
+            <a href="#">
+              <i class="fa fa-group"></i> <span>Residants</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li class="@if(Request::is('residant/create')) active @endif"><a href="{{ url('/residant/create') }}"><i class="fa fa-circle-o"></i> Ajouter Residant</a></li>
+              <li class="@if(Request::is('residant/view')) active @endif"><a href="{{ url('/residant/view') }}"><i class="fa fa-circle-o"></i> Consulter Residant</a></li>
+            </ul>
+          </li>
+
+          <li class="treeview @if(Request::is('worker/*')) active @endif">
+            <a href="#">
+              <i class="fa fa-group"></i> <span>Ouvriers</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li class="@if(Request::is('worker/create')) active @endif"><a href="{{ url('/worker/create') }}"><i class="fa fa-circle-o"></i> Ajouter Ouvrier</a></li>
+              <li class="@if(Request::is('worker/view')) active @endif"><a href="{{ url('/worker/view') }}"><i class="fa fa-circle-o"></i> Consulter Ouvrier</a></li>
+            </ul>
+          </li>
+
+          <li class="treeview @if(Request::is('maintenance/*')) active @endif">
+            <a href="#">
+              <i class="fa fa-group"></i> <span>Maintenances</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li class="@if(Request::is('maintenance/view')) active @endif"><a href="{{ url('/maintenance/view') }}"><i class="fa fa-circle-o"></i> Consulter Maintenances</a></li>
+            </ul>
+          </li>
+        {{-- END OF Maintenance --}}
 
         {{-- Direct Links --}}
 

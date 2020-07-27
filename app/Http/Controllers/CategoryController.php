@@ -196,7 +196,7 @@ class CategoryController extends Controller
             \App\Models\CategoryUnitsMaster::where('category_id',$id)->delete();
 
             $messageType = 1;
-            $message = "Category ".$category->category_name." details deleted successfully !";
+            $message = "Category ".$category->category_name." details supprimé avec succés !";
 
         } catch(\Illuminate\Database\QueryException $ex){  
             $messageType = 2;

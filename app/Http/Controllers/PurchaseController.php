@@ -211,7 +211,7 @@ class PurchaseController extends Controller
             $purchase->delete();    
 
             $messageType = 1;
-            $message = "Purchase ".$purchase->purchase_name." details deleted successfully !";
+            $message = "Purchase ".$purchase->purchase_name." details supprimé avec succés !";
 
         } catch(\Illuminate\Database\QueryException $ex){  
             $messageType = 2;

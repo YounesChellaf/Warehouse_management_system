@@ -216,7 +216,7 @@ class SalesController extends Controller
             $sales->delete();    
 
             $messageType = 1;
-            $message = "Sales ".$sales->sales_name." details deleted successfully !";
+            $message = "Sales ".$sales->sales_name." details supprimé avec succés !";
 
         } catch(\Illuminate\Database\QueryException $ex){  
             $messageType = 2;
