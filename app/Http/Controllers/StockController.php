@@ -281,7 +281,7 @@ class StockController extends Controller
 
         foreach ($stock as $skey => $svalue) {
           
-          $data['labels'][] = $svalue->stock_name;
+          $data['labels'][] = $svalue->category_name . ": " . $svalue->stock_name;
 
           $data['stock'][] = $svalue->stock_quantity;
 

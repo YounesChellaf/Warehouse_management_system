@@ -10,11 +10,11 @@
 
 <div class="login-box">
   <div class="login-logo">
-    <a href="/">MyStocks</a>
+    <a href="/"><b>Gestion BDV</b></a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">Sign in to start your session</p>
+    <p class="login-box-msg">veuillez vous connecter</p>
 
     <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
       
@@ -50,7 +50,7 @@
             </div>
             <!-- /.col -->
             <div class="col-xs-4">
-              <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+              <button type="submit" class="btn btn-primary btn-block btn-flat">connecter</button>
             </div>
             <!-- /.col -->
       </div>

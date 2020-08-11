@@ -11,7 +11,7 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-    	$array = ['name'=>'Administrator','email'=>'admin@mystocks.in','password'=>bcrypt('12345678')];
+    	$array = ['name'=>'Administrateur','email'=>'admin@admin.admin','password'=>bcrypt('admin')];
     	
         \App\Models\User::truncate();
         \App\Models\User::create($array);

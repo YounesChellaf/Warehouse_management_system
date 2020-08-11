@@ -124,7 +124,7 @@
                                   </td>
 
                                   <td width="100px">
-                                    <input type="text" class="form-control stock_total" name="sub_total[]"  readonly="" value="0">
+                                    <input type="text" class="form-control" name="sub_total[]"  readonly="" value="0">
                                   </td>
 
                                   <td><button type="button" class="btn btn-danger remove_tr">&times;</button></td>
@@ -204,7 +204,7 @@
                             <div class="col-sm-3">
                               <div class="form-group">
                                 <label>Grand Total</label><br>
-                                <input type="text" class="form-control grand_total" name="grand_total" readonly="">
+                                <input type="text" class="form-control" name="grand_total" readonly="" value="0">
                               </div>
                             </div>
 

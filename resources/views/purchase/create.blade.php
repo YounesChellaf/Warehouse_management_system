@@ -60,14 +60,14 @@
                               </div>
                             </div>
 
-                            <div class="col-sm-2 hidden">
+                            <div class="col-sm-2">
                               <div class="form-group">
                                 <label>Opening Balance</label><br>
                                 <input type="text" name="opening_balance" class="form-control opening_balance" readonly="">
                               </div>
                             </div>
 
-                            <div class="col-sm-2 hidden">
+                            <div class="col-sm-2">
                               <div class="form-group">
                                 <label>Opening Due</label><br>
                                 <input type="text" name="opening_due" class="form-control opening_due" readonly="">

@@ -49,7 +49,7 @@
         <div class="col-xs-12">
           <div class="box box-info">
           <div class="box-header with-bresidant">
-            <h3 class="box-title">Consulter Client</h3>
+            <h3 class="box-title">Consulter Résidents</h3>
 
             <div class="box-tools pull-right">
               <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">

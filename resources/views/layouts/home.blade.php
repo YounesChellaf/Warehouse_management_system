@@ -306,7 +306,7 @@
         <li class="header">Maintainance</li>
         <li class="treeview @if(Request::is('residant/*')) active @endif">
             <a href="#">
-              <i class="fa fa-group"></i> <span>Residants</span>
+              <i class="fa fa-group"></i> <span>Residents</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
