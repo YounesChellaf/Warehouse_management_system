@@ -82,6 +82,8 @@
                                 <th data-field="resident_room" data-align="center" data-sortable="true">Chambre</th>
                                 <th data-field="category" data-align="center" data-sortable="true">Catégorie</th>
                                 <th data-field="description" data-align="center" data-sortable="true">Description</th>
+                                <th data-field="date_issue" data-align="center" data-sortable="true">Date issue</th>
+                                <th data-field="deadline" data-align="center" data-sortable="true">Deadline</th>
                                 <th data-field="worker_name" data-align="center" data-sortable="true">Nom Ouvrier</th>
                                 <th data-field="worker_contact" data-align="center" data-sortable="true">Contact Ouvrier</th>
                                 <th data-field="progress" data-align="center" data-sortable="true">Le progrès</th>

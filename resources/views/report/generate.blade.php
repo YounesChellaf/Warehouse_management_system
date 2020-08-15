@@ -8,7 +8,7 @@
   </h1>
   <ol class="breadcrumb">
     <li><a href="#"><i class="fa fa-dashboard"></i> Accueil</a></li>
-    <li class="active">Généré Rapport</li>
+    <li class="active">Générer Rapport</li>
   </ol>
 </section>
 
@@ -29,7 +29,7 @@
         <div class="col-md-offset-2 col-md-8">
           <div class="box box-info">
           <div class="box-header with-bsales">
-            <h3 class="box-title">Généré Rapport</h3>
+            <h3 class="box-title">Générer Rapport</h3>
 
             <div class="box-tools pull-right">
               <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">

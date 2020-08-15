@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class MaintenanceController extends Controller
 {
@@ -11,7 +12,6 @@ class MaintenanceController extends Controller
         if(!isset($request['order'])){
             if($request['order']!='desc')
             $request['order']='desc';
-        
         }
 
         if(!isset($request['search'])){
@@ -42,6 +42,8 @@ class MaintenanceController extends Controller
                       ->orwhere('resident_room','like',$request['search'])
                       ->orwhere('category','like',$request['search'])
                       ->orwhere('description','like',$request['search'])
+                      ->orwhere('date_issue','like',$request['search'])
+                      ->orwhere('deadline','like',$request['search'])
                       ->orwhere('worker_name','like',$request['search'])
                       ->orwhere('worker_contact','like',$request['search'])
                       ->orwhere('progress','like',$request['search']);
@@ -58,6 +60,8 @@ class MaintenanceController extends Controller
                     ->orwhere('resident_room','like',$request['search'])
                     ->orwhere('category','like',$request['search'])
                     ->orwhere('description','like',$request['search'])
+                    ->orwhere('date_issue','like',$request['search'])
+                    ->orwhere('deadline','like',$request['search'])
                     ->orwhere('worker_name','like',$request['search'])
                     ->orwhere('worker_contact','like',$request['search'])
                     ->orwhere('progress','like',$request['search']);
@@ -73,6 +77,7 @@ class MaintenanceController extends Controller
     {
         try {
             $resident = \App\Models\Residant::find($request->resident_id);
+            $dt = Carbon::now();
             \App\Models\Maintenace::create([
                 'resident_id' => $request->resident_id,
                 'description' => $request->description,
@@ -81,6 +86,7 @@ class MaintenanceController extends Controller
                 'resident_contact' => $resident->resident_contact,
                 'resident_block' => $resident->resident_block,
                 'resident_room' => $resident->resident_room,
+                'date_issue' => $dt->toFormattedDateString(),
                 'progress' => 'en attente'
             ]);
             return response()->json('success');
@@ -106,11 +112,13 @@ class MaintenanceController extends Controller
 
     public function update(Request $request, $id){
         try {
+            $dt = Carbon::parse($request->deadline);
             $maintenance = \App\Models\Maintenace::find($id);
             $ouvrier = \App\Models\Ouvriermaint::find($request->ouvrier_id);
             $maintenance->worker_id = $ouvrier->id;
             $maintenance->worker_name = $ouvrier->worker_name;
             $maintenance->worker_contact = $ouvrier->worker_contact;
+            $maintenance->deadline = $dt->toFormattedDateString();
             $maintenance->progress = 'en cours';
             $maintenance->save();
             $messageType = 1;
@@ -125,8 +133,15 @@ class MaintenanceController extends Controller
 
     public function complete(Request $request, $id)
     {
+        
+        $dt_now = Carbon::now();
         $maintenance = \App\Models\Maintenace::find($id);
-        $maintenance->progress = 'achevé';
+        $dt_deadline = Carbon::parse($maintenance->deadline);
+        if($dt_now->greaterThan($dt_deadline)){
+            $maintenance->progress = 'achevé (en retard)';
+        }else{
+            $maintenance->progress = 'achevé';
+        }
         $maintenance->save();
         return response()->json('success');
     }

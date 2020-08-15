@@ -44,8 +44,11 @@
                               @foreach($ouvriers as $ouvrier)
                                   <option value="{{ $ouvrier->id }}">{{ $ouvrier->worker_name . ' : ' . $ouvrier->worker_spec}}</option>
                               @endforeach
-
                             </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="deadline">Deadline:</label><br>
+                            <input class="form-control pull-right" type="date" id="deadline" name="deadline">
                           </div>
                         </div>
 
@@ -68,5 +71,20 @@
         </div>  
       </div>  
     </section>
+    <script>
+      var today = new Date();
+      var dd = today.getDate();
+      var mm = today.getMonth()+1; //January is 0!
+      var yyyy = today.getFullYear();
+      if(dd<10){
+              dd='0'+dd
+          } 
+          if(mm<10){
+              mm='0'+mm
+          } 
+
+      today = yyyy+'-'+mm+'-'+dd;
+      document.getElementById("deadline").setAttribute("min", today);
+    </script>
     <!-- /.content -->
 @endsection
