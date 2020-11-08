@@ -1,0 +1,66 @@
+#loading {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+    opacity: 0.9;
+    background-color: #fff;
+    z-index: 99999999999;
+    text-align: center;
+    display: none;
+}
+
+#loading img {
+    position: relative;
+    top: 30%;
+    z-index: 99999999999;
+}
+
+#loading-circle {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    z-index: 99999999999;
+}
+
+.singleNotationCategory {
+    cursor: pointer;
+}
+
+.football,
+.tennis,
+.chesse {
+    display: none;
+}
+
+.avatar {
+    width: 60px;
+}
+.avatarFootball {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.avatarFootball div {
+    padding: 0 10px;
+}
+#teamsContainer,
+#teamsTennisContainer,
+#teamsChessContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.teamfootball {
+    width: 45%;
+    text-align: center;
+}
+#teamsContainer ul,
+#teamsTennisContainer ul,
+#teamsChessContainer ul {
+    border-radius: 5px;
+    padding: 10px;
+    border: 0.8px solid rgb(207, 205, 205);
+}
